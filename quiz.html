@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .quiz-container {
+            max-width: 600px;
+            margin: 0 auto;
+            border: 1px solid #ccc;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        .result {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="quiz-container">
+        <h2>Quiz de Conhecimentos sobre Cristiano</h2>
+        <form id="quiz-form">
+            <!-- Pergunta 1 -->
+            <div>
+                <h3>1. Onde Cristiano nasceu?</h3>
+                
+                <input type="radio" id="madeira" name="question1" value="Madeira">
+                <label for="madeira">Ilha da Madeira</label><br>
+
+                <input type="radio" id="lisboa" name="question1" value="Lisboa">
+                <label for="lisboa">Lisboa</label><br>
+
+                <input type="radio" id="porto" name="question1" value="Porto">
+                <label for="porto">Porto</label><br>
+
+                <input type="radio" id="braga" name="question1" value="Braga">
+                <label for="braga">Braga</label><br>
+            </div>
+            <br>
+
+            <!-- Pergunta 2 -->
+            <div>
+                <h3>2. Quantas Liga dos Campeões Cristiano possui?</h3>
+
+                <input type="radio" id="duas" name="question2" value="Duas">
+                <label for="duas">2</label><br>
+
+                <input type="radio" id="tres" name="question2" value="Tres">
+                <label for="tres">3</label><br>
+
+                <input type="radio" id="1uatro" name="question2" value="Quatro">
+                <label for="quatro">4</label><br>
+
+                <input type="radio" id="cinco" name="question2" value="Cinco">
+                <label for="cinco">5</label><br>
+            </div>
+            <br>
+
+            <!-- Pergunta 3 -->
+            <div>
+                <h3>3. Quantos titulos Cristiano Ronaldo já conquistou?</h3>
+
+                <input type="radio" id="vinteoito" name="question3" value="Vinteoito">
+                <label for="vinteoito">28</label><br>
+
+                <input type="radio" id="trintaeum" name="question3" value="Trintaeum">
+                <label for="trintaeum">31</label><br>
+
+                <input type="radio" id="trintaeseis" name="question3" value="Trintaeseis">
+                <label for="trintaeseis">36</label><br>
+
+                <input type="radio" id="quarentaetres" name="question3" value="Quarentaetres">
+                <label for="quarentaetres">43</label><br>
+            </div>
+            <br>
+
+            <!-- Pergunta 4 -->
+            <div>
+                <h3>4. Quantos gols Cristiano tem na Liga dos Campeões?</h3>
+
+                <input type="radio" id="centoeum" name="question4" value="centoeum">
+                <label for="centoeum">101</label><br>
+
+                <input type="radio" id="centoevintenove" name="question4" value="centoevintenove">
+                <label for="centoevintenove">129</label><br>
+
+                <input type="radio" id="centoequarentaeum" name="question4" value="Centoequarentaeum">
+                <label for="centoequarentaeum">141</label><br>
+
+                <input type="radio" id="centoequarentaeoito" name="question4" value="centoequarentaeoito">
+                <label for="centoequarentaeoito">148</label><br>
+            </div>
+            <br>
+
+            <!-- Pergunta 5 -->
+            <div>
+                <h3>5. Qual foi o primeiro clube de Cristiano?</h3>
+                
+                <input type="radio" id="sporting" name="question5" value="Sporting">
+                <label for="sporting">Sporting</label><br>
+
+                <input type="radio" id="united" name="question5" value="United">
+                <label for="united">Manchester United</label><br>
+
+                <input type="radio" id="realmadrid" name="question5" value="Realmadrid">
+                <label for="realmadrid">Real Madrid</label><br>
+
+                <input type="radio" id="juventos" name="question5" value="Juventos">
+                <label for="juventos">Juventos</label><br>
+            </div>
+
+            <br>
+            <button type="button" onclick="checkAnswers()">Enviar</button>
+        </form>
+        <div id="result" class="result"></div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
